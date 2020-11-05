@@ -1,0 +1,168 @@
+.about {
+  padding-top: 10em; }
+  .about .slide--parent {
+    z-index: 6;
+    margin: auto;
+    overflow: hidden; }
+  .about p {
+    height: 133px;
+    color: #314584;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.18px; }
+  .about h1 {
+    color: #ff3946;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.76px;
+    text-transform: uppercase;
+    letter-spacing: 0.18px; }
+  .about small {
+    margin-bottom: 0.5em;
+    display: inline-block;
+    position: relative;
+    color: #314584;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    letter-spacing: 0.48px; }
+  .about .parent--el {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto; }
+    .about .parent--el .two--col {
+      display: flex;
+      align-items: center; }
+  .about figure {
+    margin: 0; }
+  .about .is-item {
+    width: 60%; }
+    .about .is-item.has--img {
+      width: 40%; }
+  .about .the-img {
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    .about .the-img img {
+      width: 100%; }
+  .about .is-item--inner {
+    padding: 0em 3em; }
+  .about hr {
+    margin: 0.5em 0em;
+    height: 4px;
+    background: #eee;
+    border: none; }
+  .about .the-img {
+    overflow: hidden; }
+    .about .the-img img {
+      position: relative;
+      transform: translateX(100%);
+      transition: all 400ms ease; }
+  .about .is-item--inner p {
+    transform: translateY(15px);
+    position: relative;
+    opacity: 0;
+    transition: all 400ms ease; }
+  .about h1 {
+    overflow: hidden; }
+    .about h1 span {
+      transform: translateY(100%);
+      position: relative;
+      transition: all 500ms ease;
+      display: inline-block; }
+  .about hr {
+    width: 0;
+    max-width: 8em;
+    transition: all 2500ms ease; }
+  .about small {
+    transform: translateY(10px);
+    opacity: 1;
+    transition: all 300ms ease; }
+    .about small:after {
+      width: 0;
+      max-width: 2.4em;
+      transition: all 3s ease; }
+  .about .parent--el.is-selected .the-img {
+    overflow: hidden; }
+    .about .parent--el.is-selected .the-img img {
+      position: relative;
+      transform: translateX(0%);
+      transition-delay: 300ms; }
+  .about .parent--el.is-selected .is-item--inner p {
+    transform: translateY(0px);
+    transition-delay: 500ms;
+    position: relative;
+    opacity: 1; }
+    .about .parent--el.is-selected .is-item--inner p:nth-of-type(2) {
+      color: red;
+      transition-delay: 700ms; }
+    .about .parent--el.is-selected .is-item--inner p:nth-of-type(3) {
+      transition-delay: 900ms; }
+  .about .parent--el.is-selected h1 {
+    overflow: hidden; }
+    .about .parent--el.is-selected h1 span {
+      transform: translateY(0%);
+      position: relative;
+      transition-delay: 400ms;
+      display: inline-block; }
+  .about .parent--el.is-selected hr {
+    width: 100%;
+    max-width: 8em;
+    transition-delay: 500ms; }
+
+@media screen and (max-width: 600px) {
+  .about {
+    display: none; } }
+.mobile .pas {
+  display: none;
+  width: 400px; }
+  @media screen and (max-width: 600px) {
+    .mobile .pas {
+      display: flex;
+      justify-content: space-around; } }
+
+.about-2 {
+  display: none; }
+  @media screen and (max-width: 600px) {
+    .about-2 {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; } }
+  .about-2 .work {
+    background-image: url(./../img/workplace.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 375px;
+    margin-right: 128px; }
+  .about-2 .about-item {
+    z-index: 4;
+    width: 400px;
+    margin: 0 auto; }
+    .about-2 .about-item p {
+      padding-bottom: 1em;
+      color: #314584;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.18px; }
+    .about-2 .about-item h1 {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.28px; }
+    .about-2 .about-item h3 {
+      color: #ff3946;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20.76px;
+      text-transform: uppercase;
+      letter-spacing: 0.18px; }
+
+.about-2:nth-child(3), .about-2:nth-child(2) {
+  display: none; }
+
+/*# sourceMappingURL=slider-style.css.map */
